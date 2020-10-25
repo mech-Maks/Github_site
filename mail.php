@@ -49,9 +49,9 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'From: '.adopt($name).' <'.$admin_email.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
-// mail($admin_email, adopt($form_subject), $message, $headers );
+mail($admin_email, adopt($form_subject), $message, $headers );
 echo $message;
 
-// header("Location: {$_SERVER['HTTP_REFERER']}");
+header("Location: {$_SERVER['HTTP_REFERER']}");
 echo "funny";
 ?>
