@@ -362,7 +362,7 @@
     }
 
     .form {
-        top: calc((100% - 700px)/2);
+        top: 50px;
         left: calc((100% - 720px)/2);
     
         width: 720px;
