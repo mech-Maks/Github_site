@@ -34,7 +34,7 @@
     z-index: 2;
   
     transition: opacity 0.4s linear;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .form__introduction {
