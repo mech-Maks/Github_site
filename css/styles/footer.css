@@ -1,0 +1,146 @@
+.footer__content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  padding-bottom: 32px;
+}
+
+.site-nav_footer,
+.footer__contacts,
+.footer__getinfo {
+  min-width: 280px;
+}
+
+.site-nav_footer,
+.footer__contacts,
+.footer-getinfo__icons {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+
+.site-nav_footer {
+  display: block;
+
+  margin-top: 46px;
+  margin-bottom: 0;
+}
+
+.site-nav_footer__item {
+  margin-bottom: 15px;
+}
+
+.site-nav_footer__link {
+  color: #8993ad;
+  font-size: calc(var(--small-font-size) - 1.5px);
+  text-decoration: none;
+}
+
+.footer__contacts {
+  margin-top: 27px;
+}
+
+.contacts__item {
+  margin-bottom: 23px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__link {
+  padding-left: 33px;
+
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal;
+  color: #8993ad;
+  font-weight: 500;
+}
+
+.contacts__item:nth-child(1) {
+  background-image: url("../../img/footer/phone.png");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.contacts__item:nth-child(2) {
+  background-image: url("../../img/footer/email.png");
+  background-size: 14px 10px;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
+
+.footer__getinfo {
+  margin-top: 10px;
+}
+
+.author-phone__button_footer {
+  min-height: 55px;
+  width: 100%;
+  max-width: 280px;
+
+  margin-left: 0;
+  margin-bottom: 35px;
+
+  background-image: none;
+  background-color: #ff4e2e;
+
+  border: none;
+
+  color: white;
+}
+
+.footer-getinfo__icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  list-style-type: none;
+}
+
+.icons__link {
+  display:  block;
+
+  height: 30px;
+  width: 40px;
+
+  margin-right: 13.5px;
+
+  background-image: url("../../img/footer/соцсети.png");
+  background-repeat: no-repeat;
+}
+
+.icons__link_fb {
+  background-position: -54px 0;
+}
+
+.icons__link_tw {
+  background-position: -107px 0;
+}
+
+.icons__link_ig {
+  background-position: -162px 0;
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+
+  font-size: 12px;
+  color: white;
+
+  margin: 0;
+  padding: 19px;
+
+  background-color: #31293c;
+}
+
+

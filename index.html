@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resume</title>
+
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font">
+
+  <link rel="stylesheet" href="./css/styles/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <link rel="stylesheet" href="./css/styles/global-styles.css">
+  <link rel="stylesheet" href="./css/styles/header.css">
+  <link rel="stylesheet" href="./css/styles/main.css">
+  <link rel="stylesheet" href="./css/styles/footer.css">
+  <link rel="stylesheet" href="./css/styles/form.css">
+
+  <link rel="stylesheet" href="./css/media-width/min_width_600px.css">
+  <link rel="stylesheet" href="./css/media-width/min_width_840px.css">
+  <link rel="stylesheet" href="./css/media-width/min_width_1210px.css">
+
+  <link rel="stylesheet" href="./css/styles/open-menu.css">
+
+  <script src="./build/bundle.js"></script>
+
+  <!-- <script src="./js/jquery/jquery-3.5.1.min.js" async></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+  <!-- <script src="./js/jquery/jquery.inputmask.min.js" async></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+
+
+  <!-- <script src="./js/jquery/jquery.validate.min.js" async></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="fixed-container header-container">
+      <button type="button" class="header__nav-button" 
+        aria-label="Открыть меню"></button>
+      
+      <nav class="site-nav site-nav_header">
+        <ul class="site-nav_header__list">
+          <li class="site-nav_header__item">
+            <a class="site-nav_header__link" href="#activities">Услуги</a>
+          </li>
+
+          <li class="site-nav_header__item">
+            <a class="site-nav_header__link" href="#portfolio">Портфолио</a>
+          </li>
+
+          <li class="site-nav_header__item">
+            <a class="site-nav_header__link" href="#price-list">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__author-phone author-phone">
+        <a href="tel:+74999955577" class= "author-phone__span">
+          +7 (499) 995-55-77
+        </a>
+
+        <button type="button" class="call-button author-phone__button author-phone__button_header">
+          <span class="call-button__span">Заказать звонок</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="preview">
+      <div class="author-container">
+        <span class="author-container__span">#</span>
+        <span class="author-container__span">&lt;div&gt;</span>
+        <span class="author-container__span">&lt;div&gt;</span>
+        <span class="author-container__span">&lt;/&gt;</span>
+        <span class="author-container__span">{ }</span>
+
+        <picture>
+          <source type="image/webp"
+            srcset="./img/main/author/author.webp 1x,
+                    ./img/main/author/author_2x.webp 2x,
+                    ./img/main/author/author_3x.webp 3x">
+          
+          <img class="author-container__image" alt="автор"
+            srcset="./img/main/author/author_2x.png 2x,
+                    ./img/main/author/author_3x.png 3x"
+            src="./img/main/author/author.png">
+        </picture>
+      </div>
+
+      <div class="fixed-container introduction-container">
+        <h1 class="introduction">
+          Дмитрий Алексеев
+          <span class="introduction__span">
+            Frontend-разработчик и веб-верстальщик
+          </span>
+        </h1>
+
+        <button type="button" class="get-info-button">Узнать больше</button>
+      </div>
+    </section>
+
+    <section class="activities fixed-container" id="activities">
+      <h2 class="activities__introduction">Что я делаю</h2>
+
+      <ul class="activities__list">
+        <li class="activities__item activity">
+          <p class="activity__name activity__name_img-1">
+            Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
+          </p>
+        </li>
+
+        <li class="activities__item activity">
+          <p class="activity__name activity__name_img-2">
+            Адаптивная вёрстка под все браузеры и устройства
+          </p>
+        </li>
+
+        <li class="activities__item activity">
+          <p class="activity__name activity__name_img-3">
+            Frontend – разработка и&nbsp;программирование
+          </p>
+        </li>
+
+        <li class="activities__item activity">
+          <p class="activity__name activity__name_img-4">
+            Исправление и доработка существующей вёрстки
+          </p>
+        </li>
+      </ul>
+
+      <button type="button" class="get-info-button activities__button">
+        Узнать стоимость
+      </button>
+    </section>
+
+    <section class="work-examples" id="portfolio">
+      <div class="fixed-container examples-container">
+        <h2 class="work-examples__introduction">Примеры моих работ</h2>
+
+        <div class="work-examples__gallery gallery swiper-container">
+          <div class="images-container swiper-wrapper">
+            <a href="" class="swiper-slide">
+              <figure class="gallery__figure js-figure" id="image-0">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/main/works/work-1/work-1.webp 1x,
+                            ./img/main/works/work-1/work-1_2x.webp 2x,
+                            ./img/main/works/work-1/work-1_3x.webp 3x">
+
+                  <img class="gallery__img" alt="Сайт психолога Веры Антоновой"
+                    src="./img/main/works/work-1/work-1.jpg"
+                    srcset="./img/main/works/work-1/work-1_2x.jpg 2x,
+                            ./img/main/works/work-1/work-1_3x.jpg 3x">
+                </picture>
+    
+                <figcaption class="gallery__figcaption">
+                  Сайт психолога Веры Антоновой
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" class="swiper-slide">
+              <figure class="gallery__figure js-figure" id="image-1">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/main/works/work-2/work-2.webp 1x,
+                            ./img/main/works/work-2/work-2_2x.webp 2x,
+                            ./img/main/works/work-2/work-2_3x.webp 3x">
+
+                  <img class="gallery__img" alt="Сайт магазина детской одежды"
+                    src="./img/main/works/work-2/work-2.jpg"
+                    srcset="./img/main/works/work-2/work-2_2x.jpg 2x,
+                            ./img/main/works/work-2/work-2_3x.jpg 3x">
+                </picture>
+    
+                <figcaption class="gallery__figcaption">
+                  Сайт магазина детской одежды
+                </figcaption>
+              </figure>
+            </a>
+    
+            <a href="" class="swiper-slide">
+              <figure class="gallery__figure js-figure" id="image-2">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/main/works/work-3/work-3.webp 1x,
+                            ./img/main/works/work-3/work-3_2x.webp 2x,
+                            ./img/main/works/work-3/work-3_3x.webp 3x">
+
+                  <img class="gallery__img" alt="Сайт магазина «Рыболов»"
+                    src="./img/main/works/work-3/work-3.jpg"
+                    srcset="./img/main/works/work-3/work-3_2x.jpg 2x,
+                            ./img/main/works/work-3/work-3_3x.jpg 3x">
+                </picture>
+    
+                <figcaption class="gallery__figcaption">
+                  Сайт магазина «Рыболов»
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" class="swiper-slide">
+              <figure class="gallery__figure js-figure" id="image-3">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/main/works/work-3/work-3.webp 1x,
+                            ./img/main/works/work-3/work-3_2x.webp 2x,
+                            ./img/main/works/work-3/work-3_3x.webp 3x">
+
+                  <img class="gallery__img" alt="Сайт магазина «Рыболов»"
+                    src="./img/main/works/work-3/work-3.jpg"
+                    srcset="./img/main/works/work-3/work-3_2x.jpg 2x,
+                            ./img/main/works/work-3/work-3_3x.jpg 3x">
+                </picture>
+    
+                <figcaption class="gallery__figcaption">
+                  Сайт магазина «Рыболов»
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <button type="button" class="js-left-arrow left-arrow-btn swiper-button-prev" 
+            aria-label="прокрутить фото галерею влево"></button>
+
+          <button type="button" class="js-right-arrow right-arrow-btn swiper-button-next" 
+            aria-label="прокрутить фото галерею вправо"></button>
+
+
+          <div class="gallery__choose-container js-choose-buttons-container swiper-pagination">
+
+          </div>
+        </div>
+
+        <button type="button" class="get-info-button">Заказать проект</button>
+      </div>
+    </section>
+
+    <section class="product-advertisment" id="price-list">
+      <span class="product-advertisment__span">#</span>
+      <span class="product-advertisment__span">&lt;div&gt;</span>
+      <span class="product-advertisment__span">{ }</span>
+      <span class="product-advertisment__span">&lt;/&gt;</span>
+      <span class="product-advertisment__span">{ }</span>
+
+      <div class="fixed-container advertisment-container">
+        <h2 class="visually-hidden">Мой прайс-лист</h2>
+
+        <p class="product-advertisment__description">
+          Адаптивная вёрстка под все устройства и&nbsp;браузеры
+          от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+        </p>
+
+        <small class="product-advertisment__details">
+          Срок и стоимость могут отличаться от заявленных и 
+          рассчитываются индивидуально, в&nbsp;зависимсоти от сложности задач.
+        </small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="fixed-container footer__content-container">
+      <ul class="site-nav site-nav_footer">
+        <li class="site-nav_footer__item">
+          <a class="site-nav_footer__link" href="#activities">Услуги</a>
+        </li>
+
+        <li class="site-nav_footer__item">
+          <a class="site-nav_footer__link" href="#portfolio">Портфолио</a>
+        </li>
+
+        <li class="site-nav_footer__item">
+          <a class="site-nav_footer__link" href="#price-list">Стоимость</a>
+        </li>
+      </ul>
+
+      <address itemscope itemtype="http://schema.org/Organization">
+        <ul class="footer__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+74999957755" itemprop="telephone"
+              class="contacts__link">+7 (499) 995-77-55</a>
+          </li>
+  
+          <li class="contacts__item">
+            <a href="mailto:dmitriy@alekseev.com" itemprop="email"
+              class="contacts__link">dmitriy@alekseev.com</a>
+          </li>
+        </ul>
+      </address>
+      
+      <div class="footer__getinfo">
+        <button type="button" class="call-button author-phone__button
+          author-phone__button_footer">Заказать звонок</button>
+
+        <ul class="footer-getinfo__icons icons">
+          <li>
+            <a href="#" class="icons__link icons__link_vk" 
+              aria-label="Перейти на страничку автора вконтакте"></a>
+          </li>
+          
+          <li>
+            <a href="#" class="icons__link icons__link_fb" 
+              aria-label="Перейти на страничку автора в фейсбуке"></a>
+          </li>
+
+          <li>
+            <a href="#" class="icons__link icons__link_tw" 
+              aria-label="Перейти на страничку автора в твиттере"></a>
+          </li>
+
+          <li>
+            <a href="#" class="icons__link icons__link_ig" 
+              aria-label="Перейти на страничку автора в инстаграмме"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copyright">
+      &#169; Дмитрий Алексеев, 2016 – 2018
+    </p>
+
+  </footer>
+
+  <div class="form-container">
+    <form class="form">
+      <h1 class="form__introduction">Связаться с автором</h1>
+
+      <input type="hidden" name="admin_email" value="maksderyugin99@gmail.com">
+      <input type="hidden" name="form_subject" value="Тема">
+
+      <label class="form__input form__name name">
+        <span class="form__label">Имя</span>
+
+        <input type="text" name="name" class="name__input" placeholder="Иван Иванов" required>
+      </label>
+
+      <label class="form__input form__mail mail">
+        <span class="form__label">Электроная почта</span>
+
+        <input type="email" name="email" class="mail__input" placeholder="ivanivanov@mail.ru" required>
+      </label>
+      
+      <label class="form__input form__watsup whatsup">
+        <span class="form__label">Whatsup</span>
+
+        <input type="tel" name="phone" class="whatsup__input" placeholder="+7 (999) 999-99-99">
+      </label>
+
+      <label class="form__input form__description description">
+        <span class="form__label">Опишите интересующий вас вопрос</span>
+
+        <textarea name="description" class="description__input" required></textarea>
+      </label>
+
+      <button type="submit" class="form__submit">Отправить</button>
+    </form>
+  </div>
+  
+  <script>
+    $(document).ready(function(){
+			$('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999" }); //specifying options
+
+			$('form').each(function () {
+				$(this).validate({
+					errorPlacement(error, element) {
+						return true;
+					},
+					focusInvalid: true,
+					rules: {
+						phone: {
+							required: false,
+						},
+						name: {
+              required: true
+            },
+            description: {
+              required: true
+            }
+					},
+					// messages: {
+					// 	phone: {
+					// 		required: 'Введите телефон правильно'
+					// 	},
+					// 	name: {
+					// 		required: 'Нужно что-то ввести'
+					// 	}
+					// },
+					submitHandler(form) {
+            let th = $(form);
+
+            $.ajax({
+            type: 'POST',
+            url: 'mail.php',
+            data: th.serialize(),
+            // eslint-disable-next-line func-names
+            success: (() => {
+              console.log('ОТПРАВЛЕНО');
+            })
+          }).done(() => {
+
+            th.trigger('reset');
+          });
+
+          return false;
+          }
+        });
+			});
+		});
+  </script>
+</body>
+
+</html>

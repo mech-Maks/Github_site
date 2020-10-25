@@ -1,0 +1,111 @@
+@media (min-width: 600px) {
+    .fixed-container {
+        max-width: 780px;
+    }
+
+
+    /* **********Header*********** */
+    .author-phone__button {
+        width: 207px;
+        min-height: 45px;
+
+        border: 1px solid #f82370;
+
+        background-image: none;
+    }
+
+    .call-button__span {
+        display: block;
+
+        font-size: 16px;
+        color: #f53f4f;
+    }
+
+    .call-button:hover {
+        background-color: #f39ba3;
+    }
+
+    .call-button:active {
+        background-color: #ce5d67;
+        box-shadow: 0 0 3px black;
+
+        border-radius: 0;
+    }
+
+    /* ***********Main*********** */
+
+    .introduction-container {
+        align-self: unset;
+
+        max-width: 420px;
+
+        margin-left: calc( (100% - 600px)/2 );
+        margin-top: 15%;
+        margin-bottom: calc(298px - 15%);
+        z-index: 1;
+    }
+
+    .author-container {
+        position: absolute;
+        height: 455px;
+
+        background-size: 543px 460px;
+        background-position: calc(100% + 150px) 100px;
+    }
+
+    .activity__name {
+        padding-top: 90px;
+    }
+
+    .activities__list .activities__item:first-child .activity__name {
+        padding-top: 90px;
+    }
+    
+    .author-container__image {
+        height: 390px;
+        margin-right: 20px;
+        margin-left: auto;
+        margin-top: 65px;
+    }
+
+    .activity__name_img-1 {
+        min-height: 80px;
+
+        background-size: 80px 75px;
+    }
+    
+    .activity__name_img-2 {
+        min-height: 80px;
+
+        background-size: 80px 75px;
+    }
+    
+    .activity__name_img-3 {
+        min-height: 80px;
+
+        background-size: 80px 75px;
+    }
+    
+    .activity__name_img-4 {
+        min-height: 80px;
+
+        background-size: 80px 75px;
+    }
+
+    .gallery {
+        min-height: 358px;
+        min-width: 360px;
+        max-width: 420px;
+    }
+
+    .images-container {
+        min-width: inherit;
+        min-height: inherit;
+    }
+
+    .gallery__img {
+        max-width: 420px;
+        width: 420px;
+        max-height: 320px;
+    }
+}
