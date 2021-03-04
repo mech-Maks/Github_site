@@ -381,25 +381,7 @@
 						name: {
 							required: 'Нужно что-то ввести'
 						}
-					},
-					submitHandler(form) {
-            let th = $(form);
-
-            $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: th.serialize(),
-            // eslint-disable-next-line func-names
-            success: (() => {
-              console.log('ОТПРАВЛЕНО');
-            })
-          }).done(() => {
-
-            th.trigger('reset');
-          });
-
-          return false;
-          }
+					}
         });
 			});
 		});
